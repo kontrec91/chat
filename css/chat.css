@@ -1,0 +1,143 @@
+body {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    background-color:#cdcbd657 ;
+    color: #ffffff;
+}
+
+.addNewUser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #022d2d78;
+    padding: 20px;
+    max-height: 130px;
+    margin:10px;
+    background-color: #2f3020;
+}
+
+.addNewUser>span {
+    margin: 10px;
+}
+
+.userName {
+    background-color: #cdc8d6;
+}
+
+.addUserButton {
+    width: 120px;
+    height: 60px;
+    /* background-color: #d96846; */
+    margin-left: 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    background-color: #cdc8d6;
+}
+
+.userCard {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: 1px solid #0e0000;
+    background-image: url('../img/preloadder.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin:10px;
+
+}
+
+.userCardTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.userCardTop span {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.deleteUserButton {
+    padding: 10px;
+    width: 60px;
+    border-radius: 15%;
+}
+
+.userCardMain {
+    display: block;
+    min-height: 400px;
+    margin-bottom: 5px;
+    max-height: 400px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.userCardBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputMessage {
+    height: 50px;
+    width: 222px;
+    background-color: #cdc8d6;
+}
+
+.sendMesageButton {
+    height: 56px;
+    width: 60px;
+    margin-left: 5px;
+    border-radius: 15%;
+}
+
+
+
+.chatHistory {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chatHistory>li {
+    list-style-type: none;
+    background-color: #d96846;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    opacity: 0.8;
+}
+
+.myMessage {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    /* justify-content: flex-end; */
+    background-color: #596235 !important;
+}
+
+.deleteMyMessage {
+    background-color: #eda7a7;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    opacity: 0;
+    content: "\274C";
+}
+
+.myMessage:hover .deleteMyMessage {
+    opacity: 1;
+}
+
+.systemMessages {
+    background-color: #cdcbd6 !important;
+    font-style: italic;
+}
